@@ -73,6 +73,8 @@ pub fn log_base_2(x: &BigInt) -> Result<f64, String> {
     Err("Failed to calculate log base 2".into())
 }
 
+// Log Base 10 calculation
+// Courtesy: https://www.reddit.com/r/rust/comments/7xr8r3/a_question_regarding_the_num_crate_and_logarithms/
 pub fn log_base_10(x: &BigInt) -> Result<f64, String> {
     use std::cmp::Ordering;
     let zero = BigInt::zero();
